@@ -15,7 +15,6 @@ struct PasswordLoginResponseBodyDto: Codable {
     let id: String
     let type: String
     let attributes: AttributeDto
-
 }
 
 struct AttributeDto: Codable {
