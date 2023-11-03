@@ -9,8 +9,7 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 
-ENDPOINT_URL = http:/$()/survey-api.nimblehq.co/api
-API_VERSION = v1
+ENDPOINT_URL = https:/$()/survey-api.nimblehq.co/api
 API_CLIENT_ID = ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE
 API_SECRET_KEY =  lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU
 

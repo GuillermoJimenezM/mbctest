@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct nimbleTestApp: App {
+    
+    @ObservedObject var viewRouter = RouterViewModel.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(viewRouter)
         }
     }
 }

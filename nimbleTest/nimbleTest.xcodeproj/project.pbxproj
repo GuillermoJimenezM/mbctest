@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2706121C2AF4961100F5CB77 /* nimbleTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706121B2AF4961100F5CB77 /* nimbleTestApp.swift */; };
-		2706121E2AF4961100F5CB77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706121D2AF4961100F5CB77 /* ContentView.swift */; };
 		270612202AF4961200F5CB77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2706121F2AF4961200F5CB77 /* Assets.xcassets */; };
 		270612242AF4961200F5CB77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270612232AF4961200F5CB77 /* Preview Assets.xcassets */; };
 		2706122E2AF4961200F5CB77 /* nimbleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706122D2AF4961200F5CB77 /* nimbleTestTests.swift */; };
@@ -29,6 +28,17 @@
 		27D33D842AF4B2AB00484D23 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27D33D832AF4B2AB00484D23 /* Localizable.xcstrings */; };
 		27D33D862AF4B36000484D23 /* PasswordTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D852AF4B36000484D23 /* PasswordTextFieldView.swift */; };
 		27D33D882AF4B57400484D23 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D872AF4B57400484D23 /* ButtonView.swift */; };
+		27D33D8A2AF4B82F00484D23 /* AuthImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D892AF4B82F00484D23 /* AuthImplementation.swift */; };
+		27D33D8D2AF4B89300484D23 /* RepositoryConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D8C2AF4B89300484D23 /* RepositoryConfiguration.swift */; };
+		27D33D912AF4BA9100484D23 /* PasswordLoginDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D902AF4BA9100484D23 /* PasswordLoginDto.swift */; };
+		27D33D932AF4BB9D00484D23 /* PasswordLoginResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D922AF4BB9D00484D23 /* PasswordLoginResponseDto.swift */; };
+		27D33D962AF4BCF900484D23 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D952AF4BCF900484D23 /* LoginViewModel.swift */; };
+		27D33D982AF4C0F800484D23 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D972AF4C0F800484D23 /* KeyChainService.swift */; };
+		27D33D9A2AF4C11100484D23 /* TokenHandlingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D992AF4C11100484D23 /* TokenHandlingService.swift */; };
+		27D33D9D2AF4C14500484D23 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D9C2AF4C14500484D23 /* TokenModel.swift */; };
+		27D33D9F2AF4C1BC00484D23 /* TokenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D9E2AF4C1BC00484D23 /* TokenError.swift */; };
+		27D33DA12AF4C26700484D23 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA02AF4C26700484D23 /* RouterViewModel.swift */; };
+		27D33DA42AF4C2B200484D23 /* RouterViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA32AF4C2B200484D23 /* RouterViewMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +61,6 @@
 /* Begin PBXFileReference section */
 		270612182AF4961100F5CB77 /* nimbleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nimbleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2706121B2AF4961100F5CB77 /* nimbleTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestApp.swift; sourceTree = "<group>"; };
-		2706121D2AF4961100F5CB77 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2706121F2AF4961200F5CB77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270612212AF4961200F5CB77 /* nimbleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nimbleTest.entitlements; sourceTree = "<group>"; };
 		270612232AF4961200F5CB77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -77,6 +86,17 @@
 		27D33D832AF4B2AB00484D23 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		27D33D852AF4B36000484D23 /* PasswordTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldView.swift; sourceTree = "<group>"; };
 		27D33D872AF4B57400484D23 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		27D33D892AF4B82F00484D23 /* AuthImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthImplementation.swift; sourceTree = "<group>"; };
+		27D33D8C2AF4B89300484D23 /* RepositoryConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryConfiguration.swift; sourceTree = "<group>"; };
+		27D33D902AF4BA9100484D23 /* PasswordLoginDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginDto.swift; sourceTree = "<group>"; };
+		27D33D922AF4BB9D00484D23 /* PasswordLoginResponseDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginResponseDto.swift; sourceTree = "<group>"; };
+		27D33D952AF4BCF900484D23 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		27D33D972AF4C0F800484D23 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		27D33D992AF4C11100484D23 /* TokenHandlingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHandlingService.swift; sourceTree = "<group>"; };
+		27D33D9C2AF4C14500484D23 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		27D33D9E2AF4C1BC00484D23 /* TokenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenError.swift; sourceTree = "<group>"; };
+		27D33DA02AF4C26700484D23 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
+		27D33DA32AF4C2B200484D23 /* RouterViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +155,6 @@
 				270612472AF49AD500F5CB77 /* Presentation */,
 				270612462AF49AC900F5CB77 /* Resources */,
 				2706121B2AF4961100F5CB77 /* nimbleTestApp.swift */,
-				2706121D2AF4961100F5CB77 /* ContentView.swift */,
 				270612212AF4961200F5CB77 /* nimbleTest.entitlements */,
 				270612222AF4961200F5CB77 /* Preview Content */,
 			);
@@ -179,7 +198,8 @@
 		270612472AF49AD500F5CB77 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				27D33D7E2AF4B06500484D23 /* Feature */,
+				27D33DA22AF4C2A600484D23 /* Enum */,
+				27D33D7E2AF4B06500484D23 /* Features */,
 				27D33D7B2AF4B03D00484D23 /* Shared */,
 				27D33D762AF4AA7400484D23 /* Extensions */,
 				27D33D732AF4A88300484D23 /* Modifiers */,
@@ -200,7 +220,9 @@
 		270612492AF49AE300F5CB77 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				2749168D2AF4A25B00DCF031 /* Services */,
+				27D33D8E2AF4BA7900484D23 /* Models */,
+				27D33D8B2AF4B86D00484D23 /* Protocols */,
+				2749168D2AF4A25B00DCF031 /* Repositories */,
 				274916882AF4A0B600DCF031 /* Enum */,
 				274916852AF49FB700DCF031 /* Shared */,
 			);
@@ -220,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				274916862AF4A06C00DCF031 /* NetworkClient.swift */,
+				27D33D972AF4C0F800484D23 /* KeyChainService.swift */,
+				27D33D992AF4C11100484D23 /* TokenHandlingService.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -229,15 +253,17 @@
 			children = (
 				274916892AF4A0C000DCF031 /* ApiError.swift */,
 				2749168B2AF4A0E000DCF031 /* RequestMethod.swift */,
+				27D33D9E2AF4C1BC00484D23 /* TokenError.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		2749168D2AF4A25B00DCF031 /* Services */ = {
+		2749168D2AF4A25B00DCF031 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				27D33D892AF4B82F00484D23 /* AuthImplementation.swift */,
 			);
-			path = Services;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		2749168E2AF4A26100DCF031 /* Repository */ = {
@@ -278,21 +304,23 @@
 			isa = PBXGroup;
 			children = (
 				27D33D7C2AF4B04D00484D23 /* BackgroundView.swift */,
+				27D33DA02AF4C26700484D23 /* RouterViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		27D33D7E2AF4B06500484D23 /* Feature */ = {
+		27D33D7E2AF4B06500484D23 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				27D33D7F2AF4B06A00484D23 /* Auth */,
 			);
-			path = Feature;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		27D33D7F2AF4B06A00484D23 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				27D33D942AF4BCE800484D23 /* ViewModel */,
 				27D33D802AF4B07C00484D23 /* LogInView.swift */,
 			);
 			path = Auth;
@@ -304,6 +332,56 @@
 				27D33D832AF4B2AB00484D23 /* Localizable.xcstrings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		27D33D8B2AF4B86D00484D23 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D8C2AF4B89300484D23 /* RepositoryConfiguration.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		27D33D8E2AF4BA7900484D23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D9B2AF4C13A00484D23 /* Shared */,
+				27D33D8F2AF4BA7F00484D23 /* V1 */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27D33D8F2AF4BA7F00484D23 /* V1 */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D902AF4BA9100484D23 /* PasswordLoginDto.swift */,
+				27D33D922AF4BB9D00484D23 /* PasswordLoginResponseDto.swift */,
+			);
+			path = V1;
+			sourceTree = "<group>";
+		};
+		27D33D942AF4BCE800484D23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D952AF4BCF900484D23 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27D33D9B2AF4C13A00484D23 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D9C2AF4C14500484D23 /* TokenModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		27D33DA22AF4C2A600484D23 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				27D33DA32AF4C2B200484D23 /* RouterViewMode.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,20 +517,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				270612532AF49EBD00F5CB77 /* RootView.swift in Sources */,
+				27D33D9D2AF4C14500484D23 /* TokenModel.swift in Sources */,
+				27D33DA42AF4C2B200484D23 /* RouterViewMode.swift in Sources */,
+				27D33D9F2AF4C1BC00484D23 /* TokenError.swift in Sources */,
 				27D33D782AF4AA7E00484D23 /* String.swift in Sources */,
+				27D33D9A2AF4C11100484D23 /* TokenHandlingService.swift in Sources */,
 				27D33D882AF4B57400484D23 /* ButtonView.swift in Sources */,
 				274916902AF4A28F00DCF031 /* AuthRepository.swift in Sources */,
+				27D33D912AF4BA9100484D23 /* PasswordLoginDto.swift in Sources */,
 				274916872AF4A06C00DCF031 /* NetworkClient.swift in Sources */,
-				2706121E2AF4961100F5CB77 /* ContentView.swift in Sources */,
 				27D33D862AF4B36000484D23 /* PasswordTextFieldView.swift in Sources */,
+				27D33D8D2AF4B89300484D23 /* RepositoryConfiguration.swift in Sources */,
 				2706124F2AF49C0000F5CB77 /* Environment.swift in Sources */,
 				27D33D7D2AF4B04D00484D23 /* BackgroundView.swift in Sources */,
+				27D33D932AF4BB9D00484D23 /* PasswordLoginResponseDto.swift in Sources */,
 				2749168C2AF4A0E000DCF031 /* RequestMethod.swift in Sources */,
 				2706121C2AF4961100F5CB77 /* nimbleTestApp.swift in Sources */,
+				27D33D962AF4BCF900484D23 /* LoginViewModel.swift in Sources */,
 				27D33D752AF4A97700484D23 /* RoundModifier.swift in Sources */,
 				2749168A2AF4A0C000DCF031 /* ApiError.swift in Sources */,
 				274916932AF4A51200DCF031 /* TextFieldView.swift in Sources */,
+				27D33D982AF4C0F800484D23 /* KeyChainService.swift in Sources */,
+				27D33DA12AF4C26700484D23 /* RouterViewModel.swift in Sources */,
 				27D33D812AF4B07C00484D23 /* LogInView.swift in Sources */,
+				27D33D8A2AF4B82F00484D23 /* AuthImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +579,7 @@
 /* Begin XCBuildConfiguration section */
 		2706123B2AF4961200F5CB77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2706124D2AF49BF400F5CB77 /* Environemnt.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

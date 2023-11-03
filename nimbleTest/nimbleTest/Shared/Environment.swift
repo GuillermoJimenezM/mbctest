@@ -9,7 +9,6 @@ import Foundation
 
 fileprivate enum PlistKeys: String, CaseIterable {
     case endpointUrl = "ENDPOINT_URL"
-    case apiVersion = "API_VERSION"
     case apiSecretKey = "API_SECRET_KEY"
     case apiClientId = "API_CLIENT_ID"
 }

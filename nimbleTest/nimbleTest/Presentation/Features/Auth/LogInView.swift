@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LogInView: View {
     
+    @StateObject var loginViewmodel = LoginViewModel()
+    
     @State private var emailText = ""
     @State private var passwordText = ""
     
@@ -38,7 +40,7 @@ struct LogInView: View {
                     }
                     
                     ButtonView(label: "login".fromLocale()) {
-                        
+                        loginViewmodel.loginWithPassword(email: emailText, password: passwordText)
                     }
                 }
                 .padding(.horizontal)
