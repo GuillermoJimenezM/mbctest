@@ -46,6 +46,16 @@ struct SurveyItemView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 0) {
+                    
+                    HStack {
+                        Spacer()
+                        
+                        Button("logout") {
+                            RouterViewModel.shared.logout()
+                        }
+                    }
+                    .padding(.top, 40)
+                    
                     Spacer()
                     
                     Text(survey.title)
@@ -53,7 +63,6 @@ struct SurveyItemView: View {
                         .foregroundStyle(.white)
                         .bold()
                         .lineLimit(2)
-                        .border(Color.blue)
                     
                     HStack {
                         

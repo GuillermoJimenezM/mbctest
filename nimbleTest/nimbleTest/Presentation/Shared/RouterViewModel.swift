@@ -23,4 +23,13 @@ final class RouterViewModel: ObservableObject {
             viewMode = .login
         }
     }
+    
+    func logout() {
+        do {
+            try TokenHandlingService.shared.deleteToken()
+            viewMode = .login
+        } catch {
+          
+        }
+    }
 }
