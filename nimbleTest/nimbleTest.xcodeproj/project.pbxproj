@@ -15,6 +15,14 @@
 		270612382AF4961200F5CB77 /* nimbleTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270612372AF4961200F5CB77 /* nimbleTestUITests.swift */; };
 		2706123A2AF4961200F5CB77 /* nimbleTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270612392AF4961200F5CB77 /* nimbleTestUITestsLaunchTests.swift */; };
 		2706124F2AF49C0000F5CB77 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706124E2AF49C0000F5CB77 /* Environment.swift */; };
+		270612532AF49EBD00F5CB77 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270612522AF49EBD00F5CB77 /* RootView.swift */; };
+		274916872AF4A06C00DCF031 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274916862AF4A06C00DCF031 /* NetworkClient.swift */; };
+		2749168A2AF4A0C000DCF031 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274916892AF4A0C000DCF031 /* ApiError.swift */; };
+		2749168C2AF4A0E000DCF031 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749168B2AF4A0E000DCF031 /* RequestMethod.swift */; };
+		274916902AF4A28F00DCF031 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749168F2AF4A28F00DCF031 /* AuthRepository.swift */; };
+		274916932AF4A51200DCF031 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274916922AF4A51200DCF031 /* TextFieldView.swift */; };
+		27D33D752AF4A97700484D23 /* RoundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D742AF4A97700484D23 /* RoundModifier.swift */; };
+		27D33D782AF4AA7E00484D23 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D772AF4AA7E00484D23 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		2706124D2AF49BF400F5CB77 /* Environemnt.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Environemnt.xcconfig; sourceTree = "<group>"; };
 		2706124E2AF49C0000F5CB77 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		270612502AF49E3200F5CB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270612522AF49EBD00F5CB77 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		274916862AF4A06C00DCF031 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		274916892AF4A0C000DCF031 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		2749168B2AF4A0E000DCF031 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		2749168F2AF4A28F00DCF031 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		274916922AF4A51200DCF031 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		27D33D742AF4A97700484D23 /* RoundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModifier.swift; sourceTree = "<group>"; };
+		27D33D772AF4AA7E00484D23 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,7 @@
 		2706121A2AF4961100F5CB77 /* nimbleTest */ = {
 			isa = PBXGroup;
 			children = (
+				270612502AF49E3200F5CB77 /* Info.plist */,
 				2706124A2AF49B4B00F5CB77 /* Shared */,
 				270612492AF49AE300F5CB77 /* Data */,
 				270612482AF49ADD00F5CB77 /* Domain */,
@@ -148,6 +165,10 @@
 		270612472AF49AD500F5CB77 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				27D33D762AF4AA7400484D23 /* Extensions */,
+				27D33D732AF4A88300484D23 /* Modifiers */,
+				274916912AF4A4FB00DCF031 /* Components */,
+				270612522AF49EBD00F5CB77 /* RootView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -155,6 +176,7 @@
 		270612482AF49ADD00F5CB77 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				2749168E2AF4A26100DCF031 /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -162,6 +184,9 @@
 		270612492AF49AE300F5CB77 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2749168D2AF4A25B00DCF031 /* Services */,
+				274916882AF4A0B600DCF031 /* Enum */,
+				274916852AF49FB700DCF031 /* Shared */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -169,11 +194,66 @@
 		2706124A2AF49B4B00F5CB77 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				270612502AF49E3200F5CB77 /* Info.plist */,
 				2706124D2AF49BF400F5CB77 /* Environemnt.xcconfig */,
 				2706124E2AF49C0000F5CB77 /* Environment.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		274916852AF49FB700DCF031 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				274916862AF4A06C00DCF031 /* NetworkClient.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		274916882AF4A0B600DCF031 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				274916892AF4A0C000DCF031 /* ApiError.swift */,
+				2749168B2AF4A0E000DCF031 /* RequestMethod.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		2749168D2AF4A25B00DCF031 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2749168E2AF4A26100DCF031 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2749168F2AF4A28F00DCF031 /* AuthRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		274916912AF4A4FB00DCF031 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				274916922AF4A51200DCF031 /* TextFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		27D33D732AF4A88300484D23 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D742AF4A97700484D23 /* RoundModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		27D33D762AF4AA7400484D23 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D772AF4AA7E00484D23 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +386,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270612532AF49EBD00F5CB77 /* RootView.swift in Sources */,
+				27D33D782AF4AA7E00484D23 /* String.swift in Sources */,
+				274916902AF4A28F00DCF031 /* AuthRepository.swift in Sources */,
+				274916872AF4A06C00DCF031 /* NetworkClient.swift in Sources */,
 				2706121E2AF4961100F5CB77 /* ContentView.swift in Sources */,
 				2706124F2AF49C0000F5CB77 /* Environment.swift in Sources */,
+				2749168C2AF4A0E000DCF031 /* RequestMethod.swift in Sources */,
 				2706121C2AF4961100F5CB77 /* nimbleTestApp.swift in Sources */,
+				27D33D752AF4A97700484D23 /* RoundModifier.swift in Sources */,
+				2749168A2AF4A0C000DCF031 /* ApiError.swift in Sources */,
+				274916932AF4A51200DCF031 /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
