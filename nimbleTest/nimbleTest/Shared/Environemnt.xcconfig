@@ -1,0 +1,16 @@
+//
+//  Environemnt.xcconfig
+//  nimbleTest
+//
+//  Created by Guillermo Jimenez on 2/11/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+ENDPOINT_URL = http:/$()/survey-api.nimblehq.co/api
+API_VERSION = v1
+API_CLIENT_ID = ofzl-2h5ympKa0WqqTzqlVJUiRsxmXQmt5tkgrlWnOE
+API_SECRET_KEY =  lMQb900L-mTeU-FVTCwyhjsfBwRCxwwbCitPob96cuU
+

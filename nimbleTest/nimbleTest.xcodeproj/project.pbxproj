@@ -14,6 +14,7 @@
 		2706122E2AF4961200F5CB77 /* nimbleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706122D2AF4961200F5CB77 /* nimbleTestTests.swift */; };
 		270612382AF4961200F5CB77 /* nimbleTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270612372AF4961200F5CB77 /* nimbleTestUITests.swift */; };
 		2706123A2AF4961200F5CB77 /* nimbleTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270612392AF4961200F5CB77 /* nimbleTestUITestsLaunchTests.swift */; };
+		2706124F2AF49C0000F5CB77 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706124E2AF49C0000F5CB77 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,9 @@
 		270612332AF4961200F5CB77 /* nimbleTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nimbleTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270612372AF4961200F5CB77 /* nimbleTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestUITests.swift; sourceTree = "<group>"; };
 		270612392AF4961200F5CB77 /* nimbleTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nimbleTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2706124D2AF49BF400F5CB77 /* Environemnt.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Environemnt.xcconfig; sourceTree = "<group>"; };
+		2706124E2AF49C0000F5CB77 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		270612502AF49E3200F5CB77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,13 @@
 		2706121A2AF4961100F5CB77 /* nimbleTest */ = {
 			isa = PBXGroup;
 			children = (
+				2706124A2AF49B4B00F5CB77 /* Shared */,
+				270612492AF49AE300F5CB77 /* Data */,
+				270612482AF49ADD00F5CB77 /* Domain */,
+				270612472AF49AD500F5CB77 /* Presentation */,
+				270612462AF49AC900F5CB77 /* Resources */,
 				2706121B2AF4961100F5CB77 /* nimbleTestApp.swift */,
 				2706121D2AF4961100F5CB77 /* ContentView.swift */,
-				2706121F2AF4961200F5CB77 /* Assets.xcassets */,
 				270612212AF4961200F5CB77 /* nimbleTest.entitlements */,
 				270612222AF4961200F5CB77 /* Preview Content */,
 			);
@@ -127,6 +135,45 @@
 				270612392AF4961200F5CB77 /* nimbleTestUITestsLaunchTests.swift */,
 			);
 			path = nimbleTestUITests;
+			sourceTree = "<group>";
+		};
+		270612462AF49AC900F5CB77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2706121F2AF4961200F5CB77 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		270612472AF49AD500F5CB77 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		270612482AF49ADD00F5CB77 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		270612492AF49AE300F5CB77 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2706124A2AF49B4B00F5CB77 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				270612502AF49E3200F5CB77 /* Info.plist */,
+				2706124D2AF49BF400F5CB77 /* Environemnt.xcconfig */,
+				2706124E2AF49C0000F5CB77 /* Environment.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2706121E2AF4961100F5CB77 /* ContentView.swift in Sources */,
+				2706124F2AF49C0000F5CB77 /* Environment.swift in Sources */,
 				2706121C2AF4961100F5CB77 /* nimbleTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +472,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nimbleTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +511,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = nimbleTest/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
