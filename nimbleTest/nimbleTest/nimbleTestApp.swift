@@ -15,7 +15,7 @@ struct nimbleTestApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-                .environmentObject(viewRouter)
+              .environmentObject(viewRouter)
         }
     }
 }

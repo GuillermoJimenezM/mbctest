@@ -39,6 +39,14 @@
 		27D33D9F2AF4C1BC00484D23 /* TokenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D9E2AF4C1BC00484D23 /* TokenError.swift */; };
 		27D33DA12AF4C26700484D23 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA02AF4C26700484D23 /* RouterViewModel.swift */; };
 		27D33DA42AF4C2B200484D23 /* RouterViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA32AF4C2B200484D23 /* RouterViewMode.swift */; };
+		27D33DA62AF4C53C00484D23 /* SurveyDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA52AF4C53C00484D23 /* SurveyDto.swift */; };
+		27D33DA82AF4C5BA00484D23 /* SurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA72AF4C5BA00484D23 /* SurveyRepository.swift */; };
+		27D33DAA2AF4C65100484D23 /* SurveyImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DA92AF4C65100484D23 /* SurveyImplementation.swift */; };
+		27D33DAD2AF4C72C00484D23 /* SurverListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DAC2AF4C72C00484D23 /* SurverListView.swift */; };
+		27D33DB02AF4C74800484D23 /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DAF2AF4C74800484D23 /* SurveyViewModel.swift */; };
+		27D33DB22AF4C7C600484D23 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DB12AF4C7C600484D23 /* ViewState.swift */; };
+		27D33DB42AF4CC1100484D23 /* SurveyItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DB32AF4CC1100484D23 /* SurveyItemView.swift */; };
+		27D33DB62AF4DBA700484D23 /* SurveyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33DB52AF4DBA700484D23 /* SurveyDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +105,14 @@
 		27D33D9E2AF4C1BC00484D23 /* TokenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenError.swift; sourceTree = "<group>"; };
 		27D33DA02AF4C26700484D23 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		27D33DA32AF4C2B200484D23 /* RouterViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewMode.swift; sourceTree = "<group>"; };
+		27D33DA52AF4C53C00484D23 /* SurveyDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDto.swift; sourceTree = "<group>"; };
+		27D33DA72AF4C5BA00484D23 /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
+		27D33DA92AF4C65100484D23 /* SurveyImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyImplementation.swift; sourceTree = "<group>"; };
+		27D33DAC2AF4C72C00484D23 /* SurverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurverListView.swift; sourceTree = "<group>"; };
+		27D33DAF2AF4C74800484D23 /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		27D33DB12AF4C7C600484D23 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		27D33DB32AF4CC1100484D23 /* SurveyItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyItemView.swift; sourceTree = "<group>"; };
+		27D33DB52AF4DBA700484D23 /* SurveyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				27D33D892AF4B82F00484D23 /* AuthImplementation.swift */,
+				27D33DA92AF4C65100484D23 /* SurveyImplementation.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -270,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				2749168F2AF4A28F00DCF031 /* AuthRepository.swift */,
+				27D33DA72AF4C5BA00484D23 /* SurveyRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -312,6 +330,7 @@
 		27D33D7E2AF4B06500484D23 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				27D33DAB2AF4C71E00484D23 /* Surveys */,
 				27D33D7F2AF4B06A00484D23 /* Auth */,
 			);
 			path = Features;
@@ -356,6 +375,7 @@
 			children = (
 				27D33D902AF4BA9100484D23 /* PasswordLoginDto.swift */,
 				27D33D922AF4BB9D00484D23 /* PasswordLoginResponseDto.swift */,
+				27D33DA52AF4C53C00484D23 /* SurveyDto.swift */,
 			);
 			path = V1;
 			sourceTree = "<group>";
@@ -380,8 +400,28 @@
 			isa = PBXGroup;
 			children = (
 				27D33DA32AF4C2B200484D23 /* RouterViewMode.swift */,
+				27D33DB12AF4C7C600484D23 /* ViewState.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		27D33DAB2AF4C71E00484D23 /* Surveys */ = {
+			isa = PBXGroup;
+			children = (
+				27D33DAE2AF4C73800484D23 /* ViewModel */,
+				27D33DAC2AF4C72C00484D23 /* SurverListView.swift */,
+				27D33DB32AF4CC1100484D23 /* SurveyItemView.swift */,
+				27D33DB52AF4DBA700484D23 /* SurveyDetailView.swift */,
+			);
+			path = Surveys;
+			sourceTree = "<group>";
+		};
+		27D33DAE2AF4C73800484D23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27D33DAF2AF4C74800484D23 /* SurveyViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,8 +562,11 @@
 				27D33D9F2AF4C1BC00484D23 /* TokenError.swift in Sources */,
 				27D33D782AF4AA7E00484D23 /* String.swift in Sources */,
 				27D33D9A2AF4C11100484D23 /* TokenHandlingService.swift in Sources */,
+				27D33DB02AF4C74800484D23 /* SurveyViewModel.swift in Sources */,
+				27D33DB42AF4CC1100484D23 /* SurveyItemView.swift in Sources */,
 				27D33D882AF4B57400484D23 /* ButtonView.swift in Sources */,
 				274916902AF4A28F00DCF031 /* AuthRepository.swift in Sources */,
+				27D33DA82AF4C5BA00484D23 /* SurveyRepository.swift in Sources */,
 				27D33D912AF4BA9100484D23 /* PasswordLoginDto.swift in Sources */,
 				274916872AF4A06C00DCF031 /* NetworkClient.swift in Sources */,
 				27D33D862AF4B36000484D23 /* PasswordTextFieldView.swift in Sources */,
@@ -532,15 +575,20 @@
 				27D33D7D2AF4B04D00484D23 /* BackgroundView.swift in Sources */,
 				27D33D932AF4BB9D00484D23 /* PasswordLoginResponseDto.swift in Sources */,
 				2749168C2AF4A0E000DCF031 /* RequestMethod.swift in Sources */,
+				27D33DB22AF4C7C600484D23 /* ViewState.swift in Sources */,
+				27D33DAA2AF4C65100484D23 /* SurveyImplementation.swift in Sources */,
 				2706121C2AF4961100F5CB77 /* nimbleTestApp.swift in Sources */,
+				27D33DA62AF4C53C00484D23 /* SurveyDto.swift in Sources */,
 				27D33D962AF4BCF900484D23 /* LoginViewModel.swift in Sources */,
 				27D33D752AF4A97700484D23 /* RoundModifier.swift in Sources */,
 				2749168A2AF4A0C000DCF031 /* ApiError.swift in Sources */,
 				274916932AF4A51200DCF031 /* TextFieldView.swift in Sources */,
+				27D33DAD2AF4C72C00484D23 /* SurverListView.swift in Sources */,
 				27D33D982AF4C0F800484D23 /* KeyChainService.swift in Sources */,
 				27D33DA12AF4C26700484D23 /* RouterViewModel.swift in Sources */,
 				27D33D812AF4B07C00484D23 /* LogInView.swift in Sources */,
 				27D33D8A2AF4B82F00484D23 /* AuthImplementation.swift in Sources */,
+				27D33DB62AF4DBA700484D23 /* SurveyDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

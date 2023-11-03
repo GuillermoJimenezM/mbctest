@@ -29,9 +29,6 @@
     "Hello, World!" : {
 
     },
-    "loged" : {
-
-    },
     "login" : {
       "extractionState" : "manual",
       "localizations" : {

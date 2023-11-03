@@ -17,10 +17,7 @@ final class TokenHandlingService {
             return
         }
 
-        let index = bearerToken.index(bearerToken.endIndex, offsetBy: -bearerToken.count + 7)
-        let tokenOnly = bearerToken[index...]
-
-        let tokenModel = TokenModel(token: String(tokenOnly))
+        let tokenModel = TokenModel(token: bearerToken)
 
         KeyChainService.shared.save(tokenModel,
                                     service: CurrentEnvironment.shared.bundleAppIdentifier,

@@ -10,7 +10,7 @@ import SwiftUI
 
 @MainActor
 final class RouterViewModel: ObservableObject {
-    @Published var viewMode: RouterViewMode
+    @Published var viewMode: RouterViewMode = .login
     
     public static let shared = RouterViewModel()
     

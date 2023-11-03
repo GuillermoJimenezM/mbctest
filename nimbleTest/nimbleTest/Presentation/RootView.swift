@@ -17,7 +17,7 @@ struct RootView: View {
         case .login:
             LogInView()
         case .home:
-            Text("loged")
+            SurverListView()
         }
     }
 }
