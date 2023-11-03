@@ -23,6 +23,12 @@
 		274916932AF4A51200DCF031 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274916922AF4A51200DCF031 /* TextFieldView.swift */; };
 		27D33D752AF4A97700484D23 /* RoundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D742AF4A97700484D23 /* RoundModifier.swift */; };
 		27D33D782AF4AA7E00484D23 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D772AF4AA7E00484D23 /* String.swift */; };
+		27D33D7A2AF4AF2A00484D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D33D792AF4AF2A00484D23 /* LaunchScreen.storyboard */; };
+		27D33D7D2AF4B04D00484D23 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D7C2AF4B04D00484D23 /* BackgroundView.swift */; };
+		27D33D812AF4B07C00484D23 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D802AF4B07C00484D23 /* LogInView.swift */; };
+		27D33D842AF4B2AB00484D23 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 27D33D832AF4B2AB00484D23 /* Localizable.xcstrings */; };
+		27D33D862AF4B36000484D23 /* PasswordTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D852AF4B36000484D23 /* PasswordTextFieldView.swift */; };
+		27D33D882AF4B57400484D23 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D33D872AF4B57400484D23 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		274916922AF4A51200DCF031 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		27D33D742AF4A97700484D23 /* RoundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundModifier.swift; sourceTree = "<group>"; };
 		27D33D772AF4AA7E00484D23 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		27D33D792AF4AF2A00484D23 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27D33D7C2AF4B04D00484D23 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		27D33D802AF4B07C00484D23 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		27D33D832AF4B2AB00484D23 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		27D33D852AF4B36000484D23 /* PasswordTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextFieldView.swift; sourceTree = "<group>"; };
+		27D33D872AF4B57400484D23 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,7 @@
 		2706121A2AF4961100F5CB77 /* nimbleTest */ = {
 			isa = PBXGroup;
 			children = (
+				27D33D822AF4B28C00484D23 /* Localization */,
 				270612502AF49E3200F5CB77 /* Info.plist */,
 				2706124A2AF49B4B00F5CB77 /* Shared */,
 				270612492AF49AE300F5CB77 /* Data */,
@@ -158,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				2706121F2AF4961200F5CB77 /* Assets.xcassets */,
+				27D33D792AF4AF2A00484D23 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -165,6 +179,8 @@
 		270612472AF49AD500F5CB77 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				27D33D7E2AF4B06500484D23 /* Feature */,
+				27D33D7B2AF4B03D00484D23 /* Shared */,
 				27D33D762AF4AA7400484D23 /* Extensions */,
 				27D33D732AF4A88300484D23 /* Modifiers */,
 				274916912AF4A4FB00DCF031 /* Components */,
@@ -236,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				274916922AF4A51200DCF031 /* TextFieldView.swift */,
+				27D33D852AF4B36000484D23 /* PasswordTextFieldView.swift */,
+				27D33D872AF4B57400484D23 /* ButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -254,6 +272,38 @@
 				27D33D772AF4AA7E00484D23 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27D33D7B2AF4B03D00484D23 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D7C2AF4B04D00484D23 /* BackgroundView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		27D33D7E2AF4B06500484D23 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D7F2AF4B06A00484D23 /* Auth */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		27D33D7F2AF4B06A00484D23 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D802AF4B07C00484D23 /* LogInView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		27D33D822AF4B28C00484D23 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				27D33D832AF4B2AB00484D23 /* Localizable.xcstrings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,7 +410,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D33D7A2AF4AF2A00484D23 /* LaunchScreen.storyboard in Resources */,
 				270612242AF4961200F5CB77 /* Preview Assets.xcassets in Resources */,
+				27D33D842AF4B2AB00484D23 /* Localizable.xcstrings in Resources */,
 				270612202AF4961200F5CB77 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,15 +440,19 @@
 			files = (
 				270612532AF49EBD00F5CB77 /* RootView.swift in Sources */,
 				27D33D782AF4AA7E00484D23 /* String.swift in Sources */,
+				27D33D882AF4B57400484D23 /* ButtonView.swift in Sources */,
 				274916902AF4A28F00DCF031 /* AuthRepository.swift in Sources */,
 				274916872AF4A06C00DCF031 /* NetworkClient.swift in Sources */,
 				2706121E2AF4961100F5CB77 /* ContentView.swift in Sources */,
+				27D33D862AF4B36000484D23 /* PasswordTextFieldView.swift in Sources */,
 				2706124F2AF49C0000F5CB77 /* Environment.swift in Sources */,
+				27D33D7D2AF4B04D00484D23 /* BackgroundView.swift in Sources */,
 				2749168C2AF4A0E000DCF031 /* RequestMethod.swift in Sources */,
 				2706121C2AF4961100F5CB77 /* nimbleTestApp.swift in Sources */,
 				27D33D752AF4A97700484D23 /* RoundModifier.swift in Sources */,
 				2749168A2AF4A0C000DCF031 /* ApiError.swift in Sources */,
 				274916932AF4A51200DCF031 /* TextFieldView.swift in Sources */,
+				27D33D812AF4B07C00484D23 /* LogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +623,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -606,6 +663,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
